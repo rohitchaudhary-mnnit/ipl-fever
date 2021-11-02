@@ -21,6 +21,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
         match.setDate(LocalDate.parse(matchInput.getDate()));
         match.setPlayerOfMatch(matchInput.getPlayer_of_match());
+        match.setVenue(matchInput.getVenue());
 
         String firstInningsteam, secondInningsTeam;
         //Team1 is the firstInningsteam (the one who bats first)
